@@ -1,0 +1,18 @@
+#Refaça o exercício anterior, usando a maneira como o Mestre yoda falaria..
+#BELA É VIDA A
+
+public class JavaFundamentos07 {
+
+    public static void main(String[] args) {
+        String[] array = {"a", "vida", "é", "bela"};
+        StringBuilder textoFormatado = new StringBuilder();
+
+        for (int i = array.length - 1; i >= 0; i--) {
+            textoFormatado.append(array[i]);
+            if (i > 0) {
+                textoFormatado.append(" ");
+            }
+        }
+        System.out.println(textoFormatado.toString().toUpperCase());
+    }
+}
