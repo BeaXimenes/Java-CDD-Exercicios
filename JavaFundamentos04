@@ -1,0 +1,10 @@
+# Compare os 2 textos abaixo e diga se são iguais:
+
+String texto01 = "Será que são iguais?";
+String texto02 = "Será que são iguais?";
+
+if (texto01.equals(texto02)) {
+    System.out.println("Os textos são iguais.");
+} else {
+    System.out.println("Os textos são diferentes.");
+}
