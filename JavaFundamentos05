@@ -1,0 +1,18 @@
+# Faça um programa que receba de um usuário, 
+# um texto e exiba esse texto em letras maiúsculas.
+
+import java.util.Scanner;
+
+public class JavaFundamentos05 {
+	
+public static void main(String[] args) {
+	
+	Scanner scanner = new Scanner(System.in);
+    System.out.print("Digite um texto: ");
+    String texto = scanner.nextLine();
+
+    String textoEmMaiusculas = texto.toUpperCase();
+
+    System.out.println("Texto em maiúsculas: " + textoEmMaiusculas);
+}
+}
