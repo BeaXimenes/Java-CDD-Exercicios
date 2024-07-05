@@ -1,0 +1,23 @@
+# Dado o Array a seguir, {"a", "vida", "é", "bela"}
+# faça um programa que crie um string o com texto retirado 
+# do Array e imprima no seguinte formato: 
+# A VIDA É BELA
+
+public class JavaFundamentos06 {
+
+    public static void main(String[] args) {
+
+        String[] array = {"a", "vida", "é", "bela"};
+        StringBuilder textoFormatado = new StringBuilder();
+
+        for (int i = 0; i < array.length; i++) {
+            String palavra = array[i].toUpperCase();
+            textoFormatado.append(palavra).append(" ");
+        }
+
+        textoFormatado.deleteCharAt(textoFormatado.length() - 1);
+        textoFormatado.insert(0, "\"").append("\"");
+
+        System.out.println(textoFormatado.toString());
+    }
+}
